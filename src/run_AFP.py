@@ -270,6 +270,11 @@ def predict_structure(
         with open(unrelaxed_pdb_path, 'w') as f:
             f.write(unrelaxed_pdb)
 
+        # Output bias
+        bias_path = os.path.join(output_dir+'/', 'bias_'+str(i+1)+'.npy')
+        with open(bias_path, 'wb') as f:
+            np.save(f, np.array(msa_params))
+
 
 
 

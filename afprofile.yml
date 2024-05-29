@@ -1,7 +1,9 @@
 name: afprofile
 channels:
+  - https://levinthal:paradox@conda.graylab.jhu.edu
   - conda-forge
   - defaults
+  - anaconda
 dependencies:
   - _libgcc_mutex=0.1=conda_forge
   - _openmp_mutex=4.5=2_gnu
@@ -36,7 +38,6 @@ dependencies:
   - certifi=2023.11.17=py312h06a4308_0
   - cffi=1.16.0=py312hf06ca03_0
   - charset-normalizer=3.3.2=pyhd8ed1ab_0
-  - chex=0.1.85=pyhd8ed1ab_0
   - colorama=0.4.6=pyhd8ed1ab_0
   - comm=0.1.4=pyhd8ed1ab_0
   - contourpy=1.2.0=py312h8572e83_0
@@ -303,6 +304,7 @@ dependencies:
       - absl-py==2.0.0
       - amberutils==21.0
       - biopython==1.81
+      - chex==0.1.86
       - click==8.1.7
       - contextlib2==21.6.0
       - dm-haiku==0.0.11
@@ -318,7 +320,8 @@ dependencies:
       - grpcio==1.60.0
       - h5py==3.10.0
       - immutabledict==2.0.0
-      - jax==0.4.23
+      - jax==0.4.24
+      - jaxlib==0.4.24+cuda11.cudnn86
       - jmp==0.0.4
       - keras-nightly==3.0.1.dev2023121103
       - libclang==16.0.6
@@ -329,19 +332,28 @@ dependencies:
       - mmpbsa-py==16.0
       - msgpack==1.0.7
       - namex==0.0.7
+      - nvidia-cublas-cu11==11.11.3.6
       - nvidia-cublas-cu12==12.3.4.1
+      - nvidia-cuda-cupti-cu11==11.8.87
       - nvidia-cuda-cupti-cu12==12.3.101
+      - nvidia-cuda-nvcc-cu11==11.8.89
       - nvidia-cuda-nvcc-cu12==12.3.103
       - nvidia-cuda-nvrtc-cu12==12.3.103
+      - nvidia-cuda-runtime-cu11==11.8.89
       - nvidia-cuda-runtime-cu12==12.3.101
+      - nvidia-cudnn-cu11==9.1.0.70
       - nvidia-cudnn-cu12==8.9.7.29
+      - nvidia-cufft-cu11==10.9.0.58
       - nvidia-cufft-cu12==11.0.12.1
+      - nvidia-cusolver-cu11==11.4.1.48
       - nvidia-cusolver-cu12==11.5.4.101
+      - nvidia-cusparse-cu11==11.7.5.86
       - nvidia-cusparse-cu12==12.2.0.103
+      - nvidia-nccl-cu11==2.21.5
       - nvidia-nccl-cu12==2.19.3
       - nvidia-nvjitlink-cu12==12.3.101
       - oauthlib==3.2.2
-      - optax==0.1.4
+      - optax==0.2.2
       - orbax-checkpoint==0.4.7
       - packmol-memgen==2023.2.24
       - pdb4amber==22.0
@@ -360,10 +372,10 @@ dependencies:
       - tensorboard-data-server==0.7.2
       - tensorstore==0.1.51
       - termcolor==2.4.0
-      - tf-estimator-nightly==2.14.0.dev2023080308
-      - tf-keras-nightly==2.16.0.dev2023121110
-      - tf-nightly==2.16.0.dev20231211
+      - tf-estimator-nightly==2.16.0.dev2023101708
+      - tf-keras-nightly==2.16.0.dev2023101409
+      - tf-nightly==2.16.0.dev20240209
       - tree==0.2.4
       - werkzeug==3.0.1
       - wrapt==1.14.1
-prefix: ./envs/
+prefix: /home/gridsan/lguan/.conda/envs/afprofile
